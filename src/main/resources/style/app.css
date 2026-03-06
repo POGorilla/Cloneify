@@ -1,0 +1,191 @@
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+.btn-green {
+    -fx-background-color: #1DB954;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 999;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+}
+.btn-green:hover { -fx-background-color: #1ed760; }
+.btn-green:pressed { -fx-background-color: #17a74a; }
+
+.btn-icon {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b3b3b3;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 6 10;
+    -fx-background-radius: 8;
+}
+.btn-icon:hover {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-text-fill: white;
+}
+.btn-icon:pressed {
+    -fx-background-color: rgba(255,255,255,0.14);
+}
+
+.btn-play {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+
+    -fx-padding: 0;
+    -fx-pref-width: 44;
+    -fx-pref-height: 44;
+    -fx-min-width: 44;
+    -fx-min-height: 44;
+
+    -fx-background-radius: 999;
+    -fx-cursor: hand;
+    -fx-font-size: 16;
+}
+.btn-play:hover { -fx-background-color: #eaeaea; }
+.btn-play:pressed { -fx-background-color: #dcdcdc; }
+
+.btn-media {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-cursor: hand;
+    -fx-padding: 6 10;
+    -fx-background-radius: 10;
+}
+.btn-media:hover { -fx-background-color: rgba(255,255,255,0.08); }
+.btn-media:pressed { -fx-background-color: rgba(255,255,255,0.14); }
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10;
+}
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-height: 10;
+}
+
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+    -fx-background-color: rgba(255,255,255,0.06);
+    -fx-background-radius: 999;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: rgba(255,255,255,0.22);
+    -fx-background-radius: 999;
+}
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: rgba(255,255,255,0.32);
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button,
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow,
+.scroll-bar:horizontal .increment-arrow,
+.scroll-bar:horizontal .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-padding: 0;
+}
+.list-view .virtual-flow {
+    -fx-background-color: transparent;
+}
+.list-view .corner {
+    -fx-background-color: transparent;
+}
+
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b3b3b3;
+    -fx-padding: 8 10;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+.list-view .list-cell:hover {
+    -fx-background-color: rgba(255,255,255,0.07);
+    -fx-text-fill: white;
+}
+.list-view .list-cell:selected {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+.list-view .list-cell:selected:hover {
+    -fx-background-color: #323232;
+}
+
+.slider {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.slider.small .track {
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 999;
+    -fx-pref-height: 3;
+}
+.slider.small .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 999;
+    -fx-pref-width: 10;
+    -fx-pref-height: 10;
+    -fx-opacity: 0;
+}
+.slider.small:hover .thumb,
+.slider.small:pressed .thumb {
+    -fx-opacity: 1;
+}
+
+.progress-fill {
+    -fx-accent: #1DB954;
+}
+.progress-fill .track {
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 999;
+}
+.progress-fill .bar {
+    -fx-background-radius: 999;
+}
+
+.slider.progress .track {
+    -fx-background-color: transparent;
+    -fx-pref-height: 4;
+}
+.slider.progress .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 999;
+    -fx-pref-width: 10;
+    -fx-pref-height: 10;
+    -fx-opacity: 0;
+}
+.slider.progress:hover .thumb,
+.slider.progress:pressed .thumb {
+    -fx-opacity: 1;
+}

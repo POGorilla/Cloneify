@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.proiect.spotifyclone.controller.LoginController"
+            style="-fx-background-color: transparent;">
+
+    <VBox alignment="CENTER" spacing="15.0"
+          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+          style="-fx-background-color: #121212; -fx-padding: 30; -fx-background-radius: 30; -fx-border-radius: 30; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);">
+
+        <Label text="Cloneify" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+
+        <Region prefHeight="10.0" />
+
+        <TextField fx:id="emailField" promptText="Email" maxWidth="300"
+                   style="-fx-background-radius: 50; -fx-padding: 12 20;"/>
+
+        <PasswordField fx:id="passwordField" promptText="Password" maxWidth="300"
+                       style="-fx-background-radius: 50; -fx-padding: 12 20;"/>
+
+        <TextField fx:id="codeField" promptText="Enter the OTP code" maxWidth="300" visible="false" managed="false"
+                   style="-fx-background-radius: 50; -fx-padding: 12 20; -fx-border-color: #1DB954; -fx-border-width: 2; -fx-border-radius: 50;"/>
+
+        <Button fx:id="confirmCodeButton" text="Confirm Code" onAction="#onConfirmCodeClick" visible="false" managed="false"
+                style="-fx-background-color: #1DB954; -fx-text-fill: white; -fx-background-radius: 50; -fx-font-weight: bold; -fx-min-width: 150;"/>
+
+        <Label fx:id="statusLabel" text="" wrapText="true" textAlignment="CENTER" maxWidth="280"/>
+
+        <Region prefHeight="5.0" />
+
+        <Button text="LOG IN" onAction="#onLoginButtonClick"
+                style="-fx-background-color: #1DB954; -fx-text-fill: white; -fx-background-radius: 50; -fx-cursor: hand; -fx-font-weight: bold; -fx-min-width: 150; -fx-padding: 10;"/>
+
+        <Button text="No account? Register here!" onAction="#onRegisterButtonClick"
+                style="-fx-background-color: transparent; -fx-text-fill: #b3b3b3; -fx-cursor: hand; -fx-underline: true; -fx-font-size: 12;"/>
+
+    </VBox>
+
+    <Button text="✕" onAction="#onCloseButtonClick"
+            AnchorPane.topAnchor="15.0" AnchorPane.rightAnchor="15.0"
+            style="-fx-background-color: transparent; -fx-text-fill: gray; -fx-font-size: 16; -fx-cursor: hand; -fx-font-weight: bold;"/>
+
+</AnchorPane>

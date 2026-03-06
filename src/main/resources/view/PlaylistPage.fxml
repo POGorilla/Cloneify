@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.proiect.spotifyclone.controller.PlaylistPageController"
+      spacing="12" style="-fx-padding: 20; -fx-background-color: #121212; -fx-background-radius: 0 30 0 0;">
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button text="← Back" onAction="#onBack"
+                style="-fx-background-color: #282828; -fx-text-fill: white; -fx-background-radius: 8;"/>
+        <Label fx:id="playlistTitle" text="Playlist" textFill="WHITE">
+            <font><Font name="System Bold" size="20"/></font>
+        </Label>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding: 6 0 10 0;">
+        <Button fx:id="sortTitleBtn" text="Title" onAction="#onSortTitle"
+                style="-fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-background-radius: 16;
+                   -fx-padding: 6 12; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 12;"/>
+        <Button fx:id="sortArtistBtn" text="Artist" onAction="#onSortArtist"
+                style="-fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-background-radius: 16;
+                   -fx-padding: 6 12; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 12;"/>
+    </HBox>
+
+    <ScrollPane fx:id="tracksScroll"
+                fitToWidth="true"
+                style="-fx-background-color: transparent; -fx-background: transparent;">
+        <content>
+            <VBox fx:id="tracksContainer" spacing="6"
+                  style="-fx-background-color: transparent; -fx-padding: 5 0 0 0;"/>
+        </content>
+    </ScrollPane>
+
+</VBox>

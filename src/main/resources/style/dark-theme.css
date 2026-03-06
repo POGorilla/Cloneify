@@ -1,0 +1,92 @@
+.root {
+    -fx-font-family: "System";
+}
+
+.context-menu {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 10;
+    -fx-padding: 6;
+    -fx-border-color: #2b2b2b;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.65), 14, 0, 0, 2);
+}
+
+.context-menu .menu-item {
+    -fx-background-color: transparent;
+    -fx-padding: 8 14;
+    -fx-background-radius: 8;
+}
+
+.context-menu .menu-item:hover,
+.context-menu .menu-item:focused {
+    -fx-background-color: #2a2a2a;
+}
+
+.context-menu .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12;
+}
+
+.context-menu .separator .line {
+    -fx-border-color: #2b2b2b;
+    -fx-border-width: 1 0 0 0;
+}
+
+.context-menu .menu-item .right-container {
+    -fx-padding: 0 6 0 12;
+}
+
+.dark-dialog {
+    -fx-background-color: #181818;
+}
+
+.dark-dialog .dialog-pane {
+    -fx-background-color: #181818;
+}
+
+.dark-dialog .header-panel {
+    -fx-background-color: #181818;
+}
+
+.dark-dialog .content {
+    -fx-background-color: #181818;
+}
+
+.dark-dialog .label {
+    -fx-text-fill: #eaeaea;
+}
+
+.dark-dialog .text-field {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #3a3a3a;
+    -fx-padding: 8 10;
+}
+
+.dark-dialog .button-bar {
+    -fx-background-color: #181818;
+}
+
+.dark-dialog .button {
+    -fx-background-radius: 18;
+    -fx-padding: 8 16;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.dark-dialog .btn-primary {
+    -fx-background-color: #1DB954;
+    -fx-text-fill: white;
+}
+
+.dark-dialog .btn-secondary {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+
+.dark-dialog .btn-danger {
+    -fx-background-color: #b91c1c;
+    -fx-text-fill: white;
+}

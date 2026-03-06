@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.proiect.spotifyclone.controller.DiscoverPageController"
+      spacing="18"
+      style="-fx-background-color: transparent;">
+
+    <Label text="Discover" textFill="WHITE">
+        <font><Font name="System Bold" size="24.0"/></font>
+    </Label>
+
+    <ScrollPane fitToWidth="true" style="-fx-background: #121212; -fx-background-color: transparent;">
+        <FlowPane fx:id="discoverPane"
+                  hgap="18" vgap="18"
+                  prefWrapLength="760"
+                  style="-fx-background-color: transparent; -fx-padding: 2;">
+        </FlowPane>
+    </ScrollPane>
+
+</VBox>
